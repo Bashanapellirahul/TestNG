@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="mavenDmo.PackageXML2">
+      <methods>
+			<exclude name="testMethod_4"></exclude>		
+		</methods>
+      </class>
+      <class name="mavenDmo.PackageXML"/>
+	 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+<!-- in this excluding we always write the exclude tag in methods and methods tag is written in class tag-->

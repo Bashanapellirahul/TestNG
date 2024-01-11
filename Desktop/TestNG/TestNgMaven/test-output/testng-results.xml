@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="12" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-26T22:01:35 CST" name="Suite" finished-at="2023-12-26T22:01:58 CST" duration-ms="22901">
+    <groups>
+      <group name="smoke">
+        <method signature="PackageXML2.testMethod_3()[pri:0, instance:mavenDmo.PackageXML2@15888343]" name="testMethod_3" class="mavenDmo.PackageXML2"/>
+      </group> <!-- smoke -->
+      <group name="Regression">
+        <method signature="PackageXML.testMethod_1()[pri:0, instance:mavenDmo.PackageXML@491b9b8]" name="testMethod_1" class="mavenDmo.PackageXML"/>
+        <method signature="PackageXML.testMethod_2()[pri:0, instance:mavenDmo.PackageXML@491b9b8]" name="testMethod_2" class="mavenDmo.PackageXML"/>
+      </group> <!-- Regression -->
+      <group name="sanity">
+        <method signature="PackageXML2.testMethod_4()[pri:0, instance:mavenDmo.PackageXML2@15888343]" name="testMethod_4" class="mavenDmo.PackageXML2"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2023-12-26T22:01:35 CST" name="Test" finished-at="2023-12-26T22:01:58 CST" duration-ms="22901">
+      <class name="mavenDmo.LaunchingBrowser">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:mavenDmo.LaunchingBrowser@2f953efd]" started-at="2023-12-26T22:01:35 CST" name="beforeClass" finished-at="2023-12-26T22:01:39 CST" duration-ms="3653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="tc1_launchGooglepage()[pri:0, instance:mavenDmo.LaunchingBrowser@2f953efd]" started-at="2023-12-26T22:01:40 CST" name="tc1_launchGooglepage" finished-at="2023-12-26T22:01:42 CST" duration-ms="1586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1_launchGooglepage -->
+        <test-method signature="tc2_launchlinkedinpage()[pri:0, instance:mavenDmo.LaunchingBrowser@2f953efd]" started-at="2023-12-26T22:01:42 CST" name="tc2_launchlinkedinpage" finished-at="2023-12-26T22:01:45 CST" duration-ms="3697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2_launchlinkedinpage -->
+        <test-method signature="tc3_launchlinkedinpage()[pri:0, instance:mavenDmo.LaunchingBrowser@2f953efd]" started-at="2023-12-26T22:01:45 CST" name="tc3_launchlinkedinpage" finished-at="2023-12-26T22:01:45 CST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[/ by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: / by zero
+at mavenDmo.LaunchingBrowser.tc3_launchlinkedinpage(LaunchingBrowser.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc3_launchlinkedinpage -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:mavenDmo.LaunchingBrowser@2f953efd]" started-at="2023-12-26T22:01:53 CST" name="afterClass" finished-at="2023-12-26T22:01:56 CST" duration-ms="3050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- mavenDmo.LaunchingBrowser -->
+      <class name="mavenDmo.PackageXML">
+        <test-method signature="testMethod_1()[pri:0, instance:mavenDmo.PackageXML@491b9b8]" started-at="2023-12-26T22:01:40 CST" name="testMethod_1" finished-at="2023-12-26T22:01:40 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod_1 -->
+        <test-method signature="testMethod_2()[pri:0, instance:mavenDmo.PackageXML@491b9b8]" started-at="2023-12-26T22:01:40 CST" name="testMethod_2" finished-at="2023-12-26T22:01:40 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod_2 -->
+      </class> <!-- mavenDmo.PackageXML -->
+      <class name="mavenDmo.PackageXML2">
+        <test-method signature="testMethod_3()[pri:0, instance:mavenDmo.PackageXML2@15888343]" started-at="2023-12-26T22:01:40 CST" name="testMethod_3" finished-at="2023-12-26T22:01:40 CST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod_3 -->
+        <test-method signature="testMethod_4()[pri:0, instance:mavenDmo.PackageXML2@15888343]" started-at="2023-12-26T22:01:40 CST" name="testMethod_4" finished-at="2023-12-26T22:01:40 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod_4 -->
+        <test-method signature="testMethod_5()[pri:1, instance:mavenDmo.PackageXML2@15888343]" started-at="2023-12-26T22:01:40 CST" name="testMethod_5" finished-at="2023-12-26T22:01:40 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod_5 -->
+      </class> <!-- mavenDmo.PackageXML2 -->
+      <class name="mavenDmo.DataProveider">
+        <test-method signature="setData(java.lang.String,java.lang.String)[pri:0, instance:mavenDmo.DataProveider@d2de489]" started-at="2023-12-26T22:01:53 CST" name="setData" data-provider="getData" finished-at="2023-12-26T22:01:53 CST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method signature="setData(java.lang.String,java.lang.String)[pri:0, instance:mavenDmo.DataProveider@d2de489]" started-at="2023-12-26T22:01:53 CST" name="setData" data-provider="getData" finished-at="2023-12-26T22:01:53 CST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method signature="setData(java.lang.String,java.lang.String)[pri:0, instance:mavenDmo.DataProveider@d2de489]" started-at="2023-12-26T22:01:53 CST" name="setData" data-provider="getData" finished-at="2023-12-26T22:01:53 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+      </class> <!-- mavenDmo.DataProveider -->
+      <class name="mavenDmo.SafariDriverDemo">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:mavenDmo.SafariDriverDemo@f68f0dc]" started-at="2023-12-26T22:01:39 CST" name="beforeClass" finished-at="2023-12-26T22:01:40 CST" duration-ms="922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="safaridriverLaunch()[pri:0, instance:mavenDmo.SafariDriverDemo@f68f0dc]" started-at="2023-12-26T22:01:45 CST" name="safaridriverLaunch" finished-at="2023-12-26T22:01:48 CST" duration-ms="2514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- safaridriverLaunch -->
+        <test-method signature="youtube()[pri:0, instance:mavenDmo.SafariDriverDemo@f68f0dc]" started-at="2023-12-26T22:01:48 CST" name="youtube" finished-at="2023-12-26T22:01:53 CST" duration-ms="4989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- youtube -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:mavenDmo.SafariDriverDemo@f68f0dc]" started-at="2023-12-26T22:01:56 CST" name="afterClass" finished-at="2023-12-26T22:01:58 CST" duration-ms="2308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- mavenDmo.SafariDriverDemo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
